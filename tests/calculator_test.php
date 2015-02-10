@@ -19,6 +19,7 @@ class CalculatorTest extends PHPUnit_Framework_TestCase{
       $difference = $calc->subtract(5,2);
       $this->assertEquals(3, $difference); //check if 5 - 2 is equal to 3
   }
+  
 
   //test if the multiply() method in our calculator class
   //actually returns the product that
