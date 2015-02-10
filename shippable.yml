@@ -26,8 +26,8 @@ notifications:
     - vidyac.raghav@gmail.com
     
 archive: true
-cache: true
+#cache: true
 branches:
-  only: 
-    - master 
-    - shippable
+  except: 
+    #- shippable
+    - dev_shippable
