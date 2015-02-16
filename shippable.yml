@@ -31,6 +31,6 @@ archive: true
 cache: true
 
 branches:
-  only:
+  except:
     - shippable
     - travis
