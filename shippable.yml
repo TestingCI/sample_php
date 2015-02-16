@@ -29,3 +29,8 @@ notifications:
 archive: true
 
 cache: true
+
+branches:
+  only:
+    - shippable
+    - travis
