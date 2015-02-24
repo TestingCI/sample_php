@@ -10,7 +10,7 @@ class Calculator{
   }
 
   public function subtract($x, $y){
-      return $x - $x;
+      return $x - $y;
   }
 
   public function multiply($numbers_to_multiply){
