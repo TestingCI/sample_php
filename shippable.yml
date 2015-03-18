@@ -29,7 +29,7 @@ script:
    
 notifications:
   email:
-   # - vidya@shippable.com
+    - vidya@shippable.com
     - vidyac.raghav@gmail.com
     
 archive: true
