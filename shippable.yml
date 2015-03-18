@@ -8,9 +8,6 @@ php:
    - 5.4
 
 archive: true
-
-
-
 before_install:
  - source ~/.rvm/scripts/rvm && rvm use 1.9.3
 
