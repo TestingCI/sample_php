@@ -1,5 +1,6 @@
 language: php
 
+
 php: 
    - 5.3
    - 5.6
@@ -7,6 +8,7 @@ php:
    - 5.4
 
 archive: true
+
 
 before_install:
  - source ~/.rvm/scripts/rvm && rvm use 1.9.3
@@ -24,6 +26,7 @@ script:
    - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
    - git rev-parse --abbrev-ref HEAD
    
+   
 notifications:
   email:
    # - vidya@shippable.com
@@ -37,3 +40,4 @@ branches:
   except:
     - shippable
     - travis
+    - aa-testing/-1
