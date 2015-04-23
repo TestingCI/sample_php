@@ -26,5 +26,5 @@ notifications:
 archive: true
 #cache: true
 branches:
-  only: 
-    - master 
+  except: 
+    - test-exclude
