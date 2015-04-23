@@ -36,7 +36,5 @@ archive: true
 cache: true
 
 branches:
-  except:
-    - shippable
-    - travis
-    - aa-testing/-1
+ only:
+  - test-apr-23
