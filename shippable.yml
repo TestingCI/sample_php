@@ -38,3 +38,4 @@ cache: true
 branches:
  only:
   - test-apr-23
+  - master
