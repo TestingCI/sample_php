@@ -22,7 +22,7 @@ script:
 notifications:
   email:
     - vidya@shippable.com
-    - vidyac.raghav@gmail.com
+  #  - vidyac.raghav@gmail.com
     
 archive: true
 #cache: true
