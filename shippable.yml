@@ -21,8 +21,6 @@ before_script:
   - printenv
   - echo $test
 
-
-
 script:
    - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
    - git rev-parse --abbrev-ref HEAD
@@ -35,7 +33,7 @@ notifications:
     
 archive: true
 
-cache: true
+#cache: true
 
 branches:
   except:
