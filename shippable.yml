@@ -13,7 +13,9 @@ before_install:
  - source ~/.rvm/scripts/rvm && rvm use 1.9.3
 
 env:
- - secure: c8Mhtx5/8SqzIQNgXwkvFfeVrib7lbzF9EgZFfETm2bPBtdaM2EyoVT8WlOdp/Ga3+RpmQzL3DmnWx+fppS790QrGnW3bdI6X8zi0EGRXxqP4YjCpxXkcg31RMEOoYamEu55vav/00tXGcN6I1OoQU+6dH+SQ+5qqdQQ5gFyf9JRvcg13b3+7YmQLLswUZq8MRkk0ifNEKRQy5+Fc3bPn9ePoR8rw3f0WOO4q1G9IgEUdmeV1wxdKcjMKu0wgixDjGgy5lABr12uh99EnLvN90Hjucg26ouRvfkICe4SvCEbFduIEL9IppVYyLo9io/in1iD7AoPZCOaXNz7OYg6eg==
+ global:
+ # - Foo=bar
+  - secure: c8Mhtx5/8SqzIQNgXwkvFfeVrib7lbzF9EgZFfETm2bPBtdaM2EyoVT8WlOdp/Ga3+RpmQzL3DmnWx+fppS790QrGnW3bdI6X8zi0EGRXxqP4YjCpxXkcg31RMEOoYamEu55vav/00tXGcN6I1OoQU+6dH+SQ+5qqdQQ5gFyf9JRvcg13b3+7YmQLLswUZq8MRkk0ifNEKRQy5+Fc3bPn9ePoR8rw3f0WOO4q1G9IgEUdmeV1wxdKcjMKu0wgixDjGgy5lABr12uh99EnLvN90Hjucg26ouRvfkICe4SvCEbFduIEL9IppVYyLo9io/in1iD7AoPZCOaXNz7OYg6eg==
 
 before_script: 
   - mkdir -p shippable/codecoverage
@@ -24,6 +26,7 @@ before_script:
 script:
    - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
    - git rev-parse --abbrev-ref HEAD
+  # - echo 
    
    
 notifications:
