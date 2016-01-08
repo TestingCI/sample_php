@@ -10,7 +10,7 @@ php:
 
 archive: true
 
-build_image: drydock/u12php:tip
+build_image: drydock/u14php:tip
 
 env:
  global:
