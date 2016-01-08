@@ -1,5 +1,6 @@
 language: php
 
+
 php: 
  # - 5.3
   - 5.6
@@ -18,7 +19,7 @@ script:
 notifications:
   email:
     - vidya@shippable.com
-    - vidyac.raghav@gmail.com
+ #   - vidyac.raghav@gmail.com
     
 archive: true
 #cache: true
